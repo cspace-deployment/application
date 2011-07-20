@@ -54,7 +54,7 @@
     </persistence>
     <ui>
         <web>
-            <login-dest>/collectionspace/ui/havrc/html/findedit.html</login-dest>
+            <login-dest>/collectionspace/ui/havrc/html/createnew.html</login-dest>
             <login-failed-dest>/collectionspace/ui/havrc/html/index.html</login-failed-dest>
             <front-page>/collectionspace/ui/havrc/html/index.html</front-page>
             <find-page>myCollectionSpace</find-page>
