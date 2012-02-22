@@ -407,6 +407,7 @@ public class XmlJsonConversion {
 				return;
 			}
 			addExtraToJson(out, el, f, tempSon);
+			Object val = el.getText();
 
 			if(f.getUIType().startsWith("groupfield")){
 				String parts[] = f.getUIType().split("/");
@@ -420,10 +421,13 @@ public class XmlJsonConversion {
 				out.put(f.getID(),temp);
 			}
 			else{
-				out.put(f.getID(),el.getText());
+				if(f.getDataType().equals("boolean")){
+					val = Boolean.parseBoolean((String)val);
+				}
+				out.put(f.getID(), val);
 			}
 	
-			tempSon = addtemp(tempSon, f.getID(), el.getText());
+			tempSon = addtemp(tempSon, f.getID(), val);
 		}
 	}
 	
