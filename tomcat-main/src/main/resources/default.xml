@@ -49,7 +49,6 @@
         <records >
             <enum-blank>Please select a value</enum-blank>
 			
-			
             <record id="collection-object" in-findedit="yes">
                 <services-url>collectionobjects</services-url>
                 <services-tenant-singular>CollectionObject</services-tenant-singular>
@@ -1913,7 +1912,7 @@
                 </section>
             </record>
             
-            <record id="organization" type="authority,compute-displayname">
+        	<record id="organization" type="authority,compute-displayname">
                 <web-url>organization</web-url>
                 <services-tenant-auth-plural>Orgauthorities</services-tenant-auth-plural>
                 <services-tenant-auth-singular>Orgauthority</services-tenant-auth-singular>
@@ -2575,7 +2574,6 @@
                     <field id="movementNote"></field>
                 </section>
             </record>
-
 					
             <record id="structureddate" in-recordlist="no" separate-record="false">
                 <section>
@@ -2784,7 +2782,8 @@
                     <field id="valueDate" ui-type="date"></field>
                 </section>
             </record>
-            <record id="blobs" in-recordlist="no" type="blob">
+            
+        	<record id="blobs" in-recordlist="no" type="blob">
                 <services-url>blobs</services-url>
                 <terms-used>false</terms-used>
                 <refobj-used>false</refobj-used>
@@ -3145,7 +3144,8 @@
                            mini="summary,list" in-title="yes">
                     </field>
                 </section>
-            </record> <!-- close GROUPS record -->
+            </record>
+        	<!-- close GROUPS record -->
 
             <record id="id" type="id">
                 <services-tenant-plural>id</services-tenant-plural>
