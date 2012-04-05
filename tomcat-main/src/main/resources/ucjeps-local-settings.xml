@@ -1,14 +1,14 @@
 <settings>
     <admin>
-        <username>admin@core.collectionspace.org</username>
+        <username>admin@ucjeps.collectionspace.org</username>
         <password>Administrator</password>
-        <tenant>1</tenant>
-        <tenantname>core</tenantname>
+        <tenant>3</tenant>
+        <tenantname>ucjeps</tenantname>
         <cookievalidformins>60</cookievalidformins>
     </admin>
     <email>
-        <baseurl>http://localhost:8180</baseurl>
-        <from>admin@core.collectionspace.org</from>
+        <baseurl>http://bgcspace.berkeley.edu:8180</baseurl>
+        <from>admin@ucjeps.collectionspace.org</from>
         <to></to>
         <!-- if specified then all emails will send to this address - used for debugging -->
         <smtp>
@@ -31,34 +31,51 @@
     </email>
     <persistence>
         <service>
-            <url>http://localhost:8180/cspace-services</url>
-			<config-tenant></config-tenant>
-			<config-bindings></config-bindings>
-			<ims-url>http://localhost:8180/collectionspace/chain/</ims-url> <!-- XXX should be in separate IMS section -->
+            <url>http://bgcspace.berkeley.edu:8180/cspace-services</url>
+			<tenant>
+				<name>ucjeps.collectionspace.org</name>
+				<version>0.1</version>
+				<display-name>UC and Jepson Herbaria Tenant</display-name>
+			</tenant>
+			<repository>
+				<domain>ucjeps-domain</domain>
+				<client>nuxeo-java</client>
+				<dateformats>
+					<pattern>MM/dd/yyyy</pattern>
+					<pattern>dd.MM.yyyy</pattern>
+				</dateformats>
+				<languages>
+					<language>en</language>
+				</languages>
+			</repository>
+			<ims-url>http://bgcspace.berkeley.edu:8180/collectionspace/tenant/ucjeps/</ims-url> <!-- XXX should be in separate IMS section -->
         </service>
     </persistence>
     <ui>
         <web>
-            <login-dest>/collectionspace/ui/core/html/createnew.html</login-dest>
-            <login-failed-dest>/collectionspace/ui/core/html/index.html</login-failed-dest>
-            <front-page>/collectionspace/ui/core/html/index.html</front-page>
+            <login-dest>/collectionspace/ui/ucjeps/html/createnew.html</login-dest>
+            <login-failed-dest>/collectionspace/ui/ucjeps/html/index.html</login-failed-dest>
+            <front-page>/collectionspace/ui/ucjeps/html/index.html</front-page>
             <find-page>myCollectionSpace</find-page>
             <tmp-schema-path />
 			<mappings>
 				<map>
 					<recordtype>record</recordtype>
-					<file>/core/record.html</file>
+					<file>/ucjeps/html/record.html</file>
 				</map>
 				<map>
 					<recordtype>authority</recordtype>
-					<file>/core/record.html</file>
+					<file>/ucjeps/html/record.html</file>
+					<configure>
+						<meta id="recordType">{instance/web-url}</meta>
+					</configure>
 				</map>
 				<map>
 					<url></url>
 					<recordtype>procedure</recordtype>
-					<file>/core/record.html</file>
+					<file>/ucjeps/html/record.html</file>
 					<configure>
-						<meta id="title">CollectionSpace - {record/web-url}</meta>
+						<meta id="title">Ucjeps CollectionSpace - {record/web-url}</meta>
 					</configure>
 				</map>
 			</mappings>
