@@ -1,0 +1,10 @@
+<record id="concept">
+	<terms-used>false</terms-used>
+	<instances id="concept">
+		<instance id="concept-concept">
+			<web-url>concept</web-url>
+			<title-ref>concept</title-ref>
+			<title>Label Text Authority</title>
+		</instance>
+	</instances>
+</record>
