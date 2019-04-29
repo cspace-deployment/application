@@ -154,6 +154,7 @@
 		</repeat>
 		
 		<!-- Local fields -->
+		<field id="computedArtistName" section="bampfa" mini="search,list"/>
 		
 		<repeat id="bampfaObjectProductionPersonGroupList/bampfaObjectProductionPersonGroup" section="bampfa" >
 			<field id="bampfaObjectProductionPerson" section="bampfa" mini="search,list" ui-search="repeatable" autocomplete="person-person"/>
@@ -345,8 +346,6 @@
 			<field id="collectionTextNote" section="bampfa"/>
 		</repeat>
 	</section>
-	
-	<field id="computedArtistName" section="bampfa" ui-search="repeatable"/>
 
 	<!-- Use this to generate a message key for the initial value group. -->
 	<section id="initialValueGroup"/>
