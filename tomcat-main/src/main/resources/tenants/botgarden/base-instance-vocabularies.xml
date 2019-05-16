@@ -1,36 +1,71 @@
 <instances>
     <include src="domain-instance-vocabularies.xml" strip-root="yes"></include>
-    <instance id="vocab-addresstype">
-        <web-url>addresstype</web-url>
-        <title-ref>addresstype</title-ref>
-        <title>Address Types</title>
+    <instance id="vocab-inventorystatus">
+        <web-url>inventorystatus</web-url>
+        <title-ref>inventorystatus</title-ref>
+        <title>Inventory Status</title>
         <options>
-            <option id="business">business</option>
-            <option id="intersection">intersection</option>
-            <option id="personal">personal</option>
-            <option id="streetaddress">street address</option>
+            <option id="unknown">unknown</option>
+            <option id="accessionstatusunclear">accession status unclear</option>
+            <option id="accessioned">accessioned</option>
+            <option id="deaccessioned">deaccessioned</option>
+            <option id="destroyed">destroyed</option>
+            <option id="destructiveanalysis">destructive analysis</option>
+            <option id="discarded">discarded</option>
+            <option id="exchanged">exchanged</option>
+            <option id="intendedfortransfer">intended for transfer</option>
+            <option id="irregularmuseumnumber">irregular museum number</option>
+            <option id="missing">missing</option>
+            <option id="missingininventory">missing in inventory</option>
+            <option id="notcataloged">not cataloged</option>
+            <option id="notlocated">not located</option>
+            <option id="notreceived">not received</option>
+            <option id="numbernotused">number not used</option>
+            <option id="objectmount">object mount</option>
+            <option id="onloan">on loan</option>
+            <option id="partiallydeaccessioned">partially deaccessioned</option>
+            <option id="partiallyexchanged">partially exchanged</option>
+            <option id="partiallyrecataloged">partially recataloged</option>
+            <option id="returnedloanobject">returned loan object</option>
+            <option id="sold">sold</option>
+            <option id="stolen">stolen</option>
+            <option id="transferred">transferred</option>
         </options>
     </instance>
-    <instance id="vocab-concepttype">
-        <web-url>concepttype</web-url>
-        <title-ref>concepttype</title-ref>
-        <title>Concept Types</title>
+    <instance id="vocab-uocmethods">
+        <web-url>uocmethods</web-url>
+        <title-ref>uocmethods</title-ref>
+        <title>Use of Collections Methods</title>
         <options>
             <option id="class">class</option>
-            <option id="family">family</option>
-            <option id="generic">generic</option>
+            <option id="exhibition">exhibition</option>
+            <option id="publication">publication</option>
+            <option id="research">research</option>
         </options>
     </instance>
-    <instance id="vocab-organizationtype">
-        <web-url>organizationtype</web-url>
-        <title-ref>organizationtype</title-ref>
-        <title>Organization Types</title>
+    <instance id="vocab-uocusertypes">
+        <web-url>uocusertypes</web-url>
+        <title-ref>uocusertypes</title-ref>
+        <title>Use of Collections User Types</title>
         <options>
-            <option id="corporatebody">corporate body</option>
-            <option id="family">family</option>
-            <option id="repository">repository</option>
-            <option id="studio">studio</option>
-            <option id="workshop">workshop</option>
+            <option id="exhibitionorganizer">exhibition organizer</option>
+            <option id="faculty">faculty</option>
+            <option id="lecturer">lecturer</option>
+            <option id="presenter">presenter</option>
+            <option id="publisher">publisher</option>
+            <option id="researcher">researcher</option>
+        </options>
+    </instance>
+    <instance id="vocab-publishto">
+        <web-url>publishto</web-url>
+        <title-ref>publishto</title-ref>
+        <title>Publishing Destination</title>
+        <options>
+            <option id="all">All</option>
+            <option id="none">None</option>
+            <option id="cultureobject">Culture Object</option>
+            <option id="dpla">DPLA</option>
+            <option id="omeka">Omeka</option>
         </options>
     </instance>
     <instance id="vocab-languages">
@@ -318,6 +353,28 @@
             <option id="facsimile">Facsimile of</option>
         </options>
     </instance>
+    <instance id="vocab-concepttype">
+        <web-url>concepttype</web-url>
+        <title-ref>concepttype</title-ref>
+        <title>Concept Types</title>
+        <options>
+            <option id="class">class</option>
+            <option id="family">family</option>
+            <option id="generic">generic</option>
+        </options>
+    </instance>
+    <instance id="vocab-organizationtype">
+        <web-url>organizationtype</web-url>
+        <title-ref>organizationtype</title-ref>
+        <title>Organization Types</title>
+        <options>
+            <option id="corporatebody">corporate body</option>
+            <option id="family">family</option>
+            <option id="repository">repository</option>
+            <option id="studio">studio</option>
+            <option id="workshop">workshop</option>
+        </options>
+    </instance>
     <instance id="vocab-citationtermflag">
         <web-url>citationtermflag</web-url>
         <title-ref>citationtermflag</title-ref>
@@ -398,6 +455,53 @@
             <option id="popular">popular</option>
             <option id="series">series</option>
             <option id="trade">trade</option>
+        </options>
+    </instance>
+    <instance id="vocab-addresstype">
+        <web-url>addresstype</web-url>
+        <title-ref>addresstype</title-ref>
+        <title>Address Types</title>
+        <options>
+            <option id="business">business</option>
+            <option id="intersection">intersection</option>
+            <option id="personal">personal</option>
+            <option id="streetaddress">street address</option>
+        </options>
+    </instance>
+
+    <instance id="vocab-deaccessionapprovalgroup">
+        <web-url>deaccessionapprovalgroup</web-url>
+        <title-ref>deaccessionapprovalgroup</title-ref>
+        <title>Approval Group</title>
+        <options>
+            <option id="collection_committee">collection committee</option>
+            <option id="executive_committee">executive committee</option>
+            <option id="board_of_trustees">board of trustees</option>
+        </options>
+    </instance>
+    <instance id="vocab-deaccessionapprovalstatus">
+        <web-url>deaccessionapprovalstatus</web-url>
+        <title-ref>deaccessionapprovalstatus</title-ref>
+        <title>Approval Status</title>
+        <options>
+            <option id="approved">approved</option>
+            <option id="not_approved">not approved</option>
+            <option id="not_required">not required</option>
+        </options>
+    </instance>
+    <instance id="vocab-disposalmethod">
+        <web-url>disposalmethod</web-url>
+        <title-ref>disposalmethod</title-ref>
+        <title>Disposal Method</title>
+        <options>
+            <option id="destruction">destruction</option>
+            <option id="donation">donation</option>
+            <option id="exchange">exchange</option>
+            <option id="private_sale">private sale</option>
+            <option id="public_auction">public auction</option>
+            <option id="repatriation">repatriation</option>
+            <option id="return_to_donor">return to donor</option>
+            <option id="transfer">transfer</option>
         </options>
     </instance>
 </instances>
