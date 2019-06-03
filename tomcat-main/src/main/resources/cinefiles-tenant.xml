@@ -36,6 +36,7 @@
 			<include src="base-authority-concept.xml,cinefiles-authority-concept.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-work-termList.xml,cinefiles-authority-work-termList.xml" merge="xmlmerge.properties"/>
 			<include src="base-authority-work.xml,cinefiles-authority-work.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-uoc.xml"/>
 
 			<include src="base-vocabularies.xml"/>
 
