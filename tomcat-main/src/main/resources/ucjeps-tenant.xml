@@ -24,6 +24,7 @@
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-movement.xml,ucjeps-procedure-movement.xml" merge="xmlmerge.properties"/>
 			<!-- <include src="base-procedure-objectexit.xml"/> -->
+			<include src="base-procedure-uoc.xml"/>
 
 			<include src="base-authority-contact.xml"/>
 
