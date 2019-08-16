@@ -1594,8 +1594,10 @@
         <web-url>uocstaffroles</web-url>
         <title-ref>uocstaffroles</title-ref>
         <title>Use of Collection Staff Role</title>
+            <option id="greeter">greeter</option>
+            <option id="objecthandler">object handler</option>
+            <option id="presenter">presenter</option>
         <options>
-            <option id="requester">requester</option>
         </options>
 	</instance>
 	<instance id="vocab-uocmaterialtypes">
