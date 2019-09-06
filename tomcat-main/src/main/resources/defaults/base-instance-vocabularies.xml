@@ -1253,7 +1253,9 @@
         <title-ref>uocstaffroles</title-ref>
         <title>Use of Collection Staff Role</title>
         <options>
-            <option id="requester">requester</option>
+            <option id="greeter">greeter</option>
+            <option id="objecthandler">object handler</option>
+            <option id="presenter">presenter</option>
         </options>
     </instance>
     <instance id="vocab-uocmaterialtypes">
@@ -1276,4 +1278,11 @@
             <option id="wood">wood</option>
         </options>
     </instance>
+	<instance id="vocab-uocprojectid">
+        <web-url>uocprojectid</web-url>
+        <title-ref>uocprojectid</title-ref>
+        <title>Use of Collections Project Identification Number</title>
+        <options>
+        </options>
+	</instance>
 </instances>
