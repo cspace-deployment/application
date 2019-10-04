@@ -3,6 +3,7 @@
     <services-record-path id="variablemedia">
         collectionobjects_variablemedia:http://collectionspace.org/services/collectionobject/domain/collectionobject,collectionobjects_variablemedia
     </services-record-path>
+    
     <section id="descriptionInformation">
 
         <repeat id="contentWorksList/contentWorksGroup" section="variablemedia">

@@ -16,7 +16,7 @@
 			<include src="base-procedure-blobs.xml,cinefiles-procedure-blobs.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-conditioncheck.xml"/>
 			<include src="base-procedure-groups.xml,cinefiles-procedure-groups.xml" merge="xmlmerge.properties"/>
-			<include src="base-procedure-media.xml,cinefiles-procedure-media.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-media.xml,cinefiles-procedure-media.xml,extensions/piction-procedure-media.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-uoc.xml"/>
 
