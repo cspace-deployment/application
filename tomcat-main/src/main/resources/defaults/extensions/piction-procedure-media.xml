@@ -1,7 +1,7 @@
 <record id="media" is-extension="true" generate-services-schema="true">
 	
 	<services-record-path id="piction">
-		media_piction:http://collectionspace.org/services/media/domain/media,media_piction
+		media_piction:http://collectionspace.org/services/media/domain/piction,media_piction
 	</services-record-path>
 	
 	<section id="mediaInformation">
