@@ -98,6 +98,7 @@
 			<field id="notes" section="naturalhistory">
 				<selector>taxonomic-identification-notes</selector>
 			</field>
+			<field id="computedHybridName" />
 			<repeat id="taxonomicIdentHybridParentGroupList/taxonomicIdentHybridParentGroup" section="naturalhistory">
 			    <field id="taxonomicIdentHybridParent" section="naturalhistory" autocomplete="taxon-taxon"/>
 				<field id="taxonomicIdentHybridParentQualifier" section="naturalhistory">
