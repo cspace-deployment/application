@@ -108,7 +108,7 @@
 					</options>
 				</field>
 			</repeat>
-			<field id="taxonomicIdentHybridName" section="naturalhistory"/>
+			<field id="taxonomicIdentHybridName" mini="summary,search,list,relate" section="naturalhistory"/>
 			<field id="affinityTaxon" section="naturalhistory" autocomplete="taxon-taxon"/>
 			<field id="hybridFlag" section="naturalhistory" datatype="boolean"/>
 		</repeat>
