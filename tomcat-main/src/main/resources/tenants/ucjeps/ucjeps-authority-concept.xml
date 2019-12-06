@@ -6,5 +6,10 @@
 			<title-ref>concept</title-ref>
 			<title>Label Text Authority</title>
 		</instance>
+		<instance id="concept-occasion">
+			<web-url>occasion</web-url>
+			<title-ref>occasion</title-ref>
+			<title>Occasion Concepts</title>
+		</instance>
 	</instances>
 </record>
