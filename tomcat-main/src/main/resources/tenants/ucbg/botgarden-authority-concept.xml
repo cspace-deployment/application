@@ -20,6 +20,11 @@
 			<title-ref>conservation_ca</title-ref>
 			<title>Conservation Categories</title>
 		</instance>
+		<instance id="concept-occasion">
+			<web-url>occasion</web-url>
+			<title-ref>occasion</title-ref>
+			<title>Occasion Concepts</title>
+		</instance>
 	</instances>
 	
 	<section id="conceptAuthorityInformation">
