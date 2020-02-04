@@ -1285,4 +1285,12 @@
         <options>
         </options>
 	</instance>
+    <instance id="vocab-uocsubcollections">
+        <web-url>uocsubcollections</web-url>
+        <title-ref>uocsubcollections</title-ref>
+        <title>uocsubcollections</title>
+        <options>
+            <option id="uocSubcollection00">unknown</option>
+        </options>
+    </instance>
 </instances>
