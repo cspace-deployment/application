@@ -79,6 +79,8 @@
                             </enum>
                         </field>
                     </repeat>
+
+                    <field id="subcollection" ui-type="enum" autocomplete="uocsubcollections"/>
                     
                     <field id="title" mini="summary,search,list"/>
 
