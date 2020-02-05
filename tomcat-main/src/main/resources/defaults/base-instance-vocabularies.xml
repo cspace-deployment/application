@@ -1241,7 +1241,7 @@
     <instance id="vocab-uoccollectiontypes">
         <web-url>uoccollectiontypes</web-url>
         <title-ref>uoccollectiontypes</title-ref>
-        <title>Use of Collection Type</title>
+        <title>Use of Collectionss Type</title>
         <options>
             <option id="uocOsteology">osteology</option>
             <option id="uocDocumentation">documentation</option>
@@ -1251,7 +1251,7 @@
     <instance id="vocab-uocstaffroles">
         <web-url>uocstaffroles</web-url>
         <title-ref>uocstaffroles</title-ref>
-        <title>Use of Collection Staff Role</title>
+        <title>Use of Collections Staff Role</title>
         <options>
             <option id="requester">requester</option>
         </options>
@@ -1259,7 +1259,7 @@
     <instance id="vocab-uocmaterialtypes">
         <web-url>uocmaterialtypes</web-url>
         <title-ref>uocmaterialtypes</title-ref>
-        <title>Use of Collection Material Types</title>
+        <title>Use of Collections Material Types</title>
         <options>
             <option id="root">root</option>
             <option id="bulb">bulb</option>
