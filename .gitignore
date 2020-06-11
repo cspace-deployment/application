@@ -22,3 +22,6 @@ war-entry/tmp/
 .vscode
 host-settings.xml
 .flattened-pom.xml
+logged_schemas
+logs
+

@@ -108,6 +108,10 @@
                 </section>
                 <!-- not used in ui yet -->
                 <section id="otherInformation">
+                    <repeat id="publishToList" services-type-anonymous="false">
+                        <field id="publishTo" autocomplete="true" ui-type="enum" />
+                    </repeat>
+                    
                     <field id="mediaUri">
                         <services-tag>uri</services-tag>
                     </field>

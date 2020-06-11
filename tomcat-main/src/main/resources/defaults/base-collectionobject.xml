@@ -909,6 +909,7 @@
     <repeat id="fieldCollectionMethods">
       <field id="fieldCollectionMethod" autocomplete="vocab-collectionmethod" ui-type="enum"/>
     </repeat>
+    <field id="fieldCollectionFeature" />
     <field id="fieldCollectionNote"/>
     <field id="fieldCollectionNumber"/>
     <field id="fieldCollectionPlace" autocomplete="place-place,place-place_shared,place-tgn_place"/>

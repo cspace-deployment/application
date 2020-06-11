@@ -77,12 +77,13 @@
                             </options>
 						</field>
                     </repeat>
-					
+
                 	<repeat id="addressGroupList/addressGroup">
                         <field id="addressPlace1"></field>
                         <field id="addressPlace2"></field>
-                        <field id="addressMunicipality"></field>
-                        <field id="addressStateOrProvince"></field>
+                	    <field id="addressMunicipality"></field>
+                	    <field id="addressCounty"></field>
+                	    <field id="addressStateOrProvince"></field>
                         <field id="addressPostCode"></field>
                         <field id="addressCountry">
                         <!-- Options conform to ISO-3166-1 List of Countries Codes, available free of charge for "non-commercial purposes." 
