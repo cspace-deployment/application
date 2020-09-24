@@ -365,7 +365,8 @@
 					<option id="sold">sold</option>
 					<option id="stolen">stolen</option>
 					<option id="transferred">transferred</option>
-					<option id="ondeposit">on deposit</option>
+					<option id="on deposit">on deposit</option>
+					<option id="not accessioned">not accessioned</option>
 				</options>
 			</field>
 		</repeat>
