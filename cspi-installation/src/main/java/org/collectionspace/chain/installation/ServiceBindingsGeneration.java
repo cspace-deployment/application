@@ -369,7 +369,7 @@ public class ServiceBindingsGeneration {
                 <tenant:host>smtp.gmail.com</tenant:host>
                 <tenant:port>587</tenant:port>
                 <tenant:debug>true</tenant:debug>
-                <tenant:smtpAuth enabled="true" protocols="TLSv1.2">
+                <tenant:smtpAuth enabled="true">
                     <tenant:username>tom@example.com</tenant:username>
                     <tenant:password>password123</tenant:password>
                 </tenant:smtpAuth>
@@ -417,12 +417,11 @@ public class ServiceBindingsGeneration {
 			}
 
 			//
-			// Build <tenant:smtpAuth enabled="false" protocols="TLSv1.2">
+			// Build <tenant:smtpAuth enabled="false">
 			//
 			Element smtpAuthElement = smtpConfigElement.addElement(new QName("smtpAuth", nstenant));
 			if (emailData.doSMTPAuth() != null) {
 				smtpAuthElement.addAttribute("enabled", emailData.doSMTPAuth().toString());
-				smtpAuthElement.addAttribute("protocols", emailData.getSMTPSSLProtocols());
 			}
 
 			if (emailData.getSMTPAuthUsername() != null) {

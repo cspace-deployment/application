@@ -2,7 +2,8 @@
 	<services-record-path id="botgarden">movements_botgarden:http://collectionspace.org/services/movement/local/botgarden,movements_botgarden</services-record-path>
 
 	<section id="locationMovementInformation">
-		<field id="currentLocation" mini="list" />
+		<!-- Change mini summary to number -->
+		<field id="currentLocation" mini="number,list" />
 
 		<!-- Local fields -->
 
@@ -10,7 +11,8 @@
 	</section>
 
 	<section id="movementControlInformation">
-		<field id="movementReferenceNumber" mini="number,list" />
+		<!--  Remove mini -->
+		<field id="movementReferenceNumber" mini="" />
 
 		<!-- Add mini=summary and make dynamic -->
 		<field id="reasonForMove" mini="summary,list" autocomplete="true" ui-type="enum" />

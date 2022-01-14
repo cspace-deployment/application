@@ -20,7 +20,7 @@ import org.json.JSONObject;
 public class EmailData {
 
 	String baseurl,fromaddress,toaddress,loginurl ;
-	String smtphost,smtpport,smtppass,smtpuser,smtpsslprotocols;
+	String smtphost,smtpport,smtppass,smtpuser;
 	Boolean smtpdebug,smtpauth;
 	String pswdmsg, pswdsubj, tokenExpirationDays, tokenExpirationSeconds;
 	
@@ -54,7 +54,6 @@ public class EmailData {
 		smtpport = (String)section.getValue("/smtp/port");
 		smtpdebug = Util.getBooleanOrDefault(section,"/smtp/debug",false);
 		smtpauth = Util.getBooleanOrDefault(section,"/smtp/auth/@enabled",false);
-		smtpsslprotocols = Util.getStringOrDefault(section,"/smtp/auth/@protocols", "TLSv1.2");
 		smtppass = (String)section.getValue("/smtp/auth/password");
 		smtpuser = (String)section.getValue("/smtp/auth/username");
 		pswdmsg = (String)section.getValue("/passwordreset/message");
@@ -82,7 +81,6 @@ public class EmailData {
 	public Boolean doSMTPAuth() { return smtpauth; }
 	public String getSMTPAuthPassword() { if(smtpauth){ return smtppass;} else {return null;} }
 	public String getSMTPAuthUsername() { if(smtpauth){ return smtpuser;} else {return null;} }
-	public String getSMTPSSLProtocols() { if(smtpauth){ return smtpsslprotocols;} else {return null;} }
 	
 	public EmailData getEmailData() { return this; }
 
