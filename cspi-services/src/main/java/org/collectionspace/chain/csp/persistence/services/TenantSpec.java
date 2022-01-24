@@ -239,7 +239,7 @@ public class TenantSpec {
 	public String getTenantDisplay(){
 		return tenantDisplay;
 	}
-	
+
 	public boolean getCreateDisabled() {
 		return createDisabled;
 	}

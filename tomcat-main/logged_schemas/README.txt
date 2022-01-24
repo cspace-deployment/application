@@ -1,1 +1,1 @@
-Log files created during the schema and service bindings creation.  Use these logs to trouble-shoot schema changes and configuration changes.
+This directory contains copies of the XML schema definitions for the CollectionSpace "record" types.  The schemas end up in Nuxeo "bundles" that Nuxeo uses to create the backend SQL tables.  Use the copies in this directory for trouble-shooting and insight into how the Application layer config maps to XML schemas.
