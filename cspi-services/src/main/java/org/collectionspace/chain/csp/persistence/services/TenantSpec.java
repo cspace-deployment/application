@@ -247,7 +247,11 @@ public class TenantSpec {
 	public boolean getAuditRequired() {
 		return auditRequired;
 	}
-
+	
+	public boolean getAuditRequired() {
+		return auditRequired;
+	}
+	
 	public TenantSpec getTenantData() {
 		return this;
 	}
