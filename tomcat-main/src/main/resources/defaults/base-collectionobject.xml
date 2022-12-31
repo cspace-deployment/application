@@ -28,6 +28,66 @@
 		<field id="nametitle" mini="summary,list" exists-in-services="false" service-field-alias="objectName" />
 	</section>
 
+	<section id="softwareTechSpecs">
+	  <repeat id="programmingLanguageGroupList/programmingLanguageGroup">
+			<field id="programmingLanguageName" autocomplete="true" ui-type="enum" />
+			<field id="programmingLanguageVersion" />
+		</repeat>
+
+		<repeat id="softwareLibraries">
+			<field id="softwareLibrary" autocomplete="true" ui-type="enum" />
+		</repeat>
+
+		<repeat id="codeCompilers">
+			<field id="codeCompiler" autocomplete="true" ui-type="enum" />
+		</repeat>
+
+		<repeat id="intendedOperatingSystemGroupList/intendedOperatingSystemGroup">
+			<field id="intendedOperatingSystem" autocomplete="true" ui-type="enum" />
+			<field id="intendedOperatingSystemVersion" />
+		</repeat>
+
+		<repeat id="utilizedSoftwareGroupList/utilizedSoftwareGroup">
+			<field id="software" autocomplete="true" ui-type="enum" />
+			<field id="softwareVersion" />
+		</repeat>
+
+		<repeat id="intendedBrowserGroupList/intendedBrowserGroup">
+			<field id="intendedBrowser" autocomplete="true" ui-type="enum" />
+			<field id="intendedBrowserVersion" />
+		</repeat>
+
+		<repeat id="networkConnectionGroupList/networkConnectionGroup">
+			<field id="networkConnectionRequired" />
+			<field id="networkConnectionType" autocomplete="true" ui-type="enum" />
+		</repeat>
+
+		<repeat id="domainGroupList/domainGroup">
+			<field id="domainName" />
+			<field id="domainHost" autocomplete="true" />
+			<field id="domainType" autocomplete="true" ui-type="enum" />
+			<field id="domainVersion" />
+			<field id="domainOwner" autocomplete="true" />
+		</repeat>
+
+		<repeat id="applicationInteractionGroupList/applicationInteractionGroup">
+			<field id="applicationInteractionRequired" />
+			<field id="applicationRequired" autocomplete="true" ui-type="enum" />
+			<field id="applicationRequiredFor" />
+		</repeat>
+
+		<repeat id="apiUrls">
+			<field id="apiUrl" />
+		</repeat>
+
+		<repeat id="softwareTechnicalAttributeGroupList/softwareTechnicalAttributeGroup">
+			<field id="softwareTechnicalAttribute" autocomplete="true" ui-type="enum" />
+			<field id="softwareTechnicalAttributeLowValue" />
+			<field id="softwareTechnicalAttributeHighValue" />
+			<field id="softwareTechnicalAttributeUnit" autocomplete="true" ui-type="enum" />
+		</repeat>
+	</section>
+
 	<section id="identificationInformation">
 		<field id="objectNumber" mini="number,list" services-refnameDisplayName="true" />
 		<field id="numberOfObjects" datatype="integer" />
@@ -81,6 +141,38 @@
 			<field id="objectNameLanguage" autocomplete="true" ui-type="enum" />
 			<field id="objectNameNote" />
 			<field id="objectName" mini="list" />
+		</repeat>
+		<repeat id="objectSignificanceGroupList/objectSignificanceGroup">
+			<field id="assignedSignificance" autocomplete="true" ui-type="enum"/>
+			<field id="significanceAssignedBy" autocomplete="true" ui-type="enum"/>
+			<field id="significanceAssignedDate" datatype="date"/>
+			<field id="significanceAssignedContact" autocomplete="true"/>
+		</repeat>
+		<field id="objectSuppliedBy" autocomplete="true"/>
+		<field id="variableMediaComponentStatus" autocomplete="true" ui-type="enum"/>
+
+		<repeat id="credentialGroupList/credentialGroup">
+			<field id="credentialType" autocomplete="true" ui-type="enum" />
+			<field id="credentialRequiredForUse" />
+			<field id="credentialLocation" />
+		</repeat>
+
+		<repeat id="distributedLedgerGroupList/distributedLedgerGroup">
+			<field id="distributedStorageLedger" autocomplete="true" ui-type="enum" />
+			<field id="distributedLedgerParentIdentifier" />
+			<field id="distributedLedgerObjectIdentifier" />
+		</repeat>
+
+		<repeat id="ledgerGroupList/ledgerGroup" >
+			<field id="ledger" autocomplete="true" ui-type="enum" />
+			<field id="ledgerContractAddress" />
+			<field id="ledgerTokenID" />
+		</repeat>
+
+		<repeat id="checksumGroupList/checksumGroup">
+			<field id="checksumValue" />
+			<field id="checksumType" autocomplete="true" ui-type="enum" />
+			<field id="checksumDate" datatype="date" />
 		</repeat>
 	</section>
 
@@ -201,6 +293,8 @@
 			<field id="annotationDate" datatype="date" section="annotation" />
 			<field id="annotationAuthor" autocomplete="true" section="annotation" />
 		</repeat>
+
+		<field id="intendedBehavior" />
 	</section>
 	<section id="objectProductionInformation">
 		<repeat id="objectProductionDateGroupList/objectProductionDateGroup">
@@ -360,6 +454,74 @@
 		</repeat>
 		<repeat id="fieldColEventNames">
 			<field id="fieldColEventName" />
+		</repeat>
+	</section>
+
+	<section id="avTechnicalSpecs">
+		<repeat id="avFormatGroupList/avFormatGroup">
+			<field id="formatType" autocomplete="true" ui-type="enum" />
+			<field id="format" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<repeat id="avChannelGroupList/avChannelGroup">
+			<field id="numberOfChannels" datatype="integer" />
+			<field id="channelType" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<field id="channelLayout" />
+		<repeat id="fileCodecGroupList/fileCodecGroup">
+			<field id="fileCodec" autocomplete="true" ui-type="enum" />
+			<field id="compressionStandard" autocomplete="true" ui-type="enum" />
+			<field id="fileContainer" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<field id="audioType" autocomplete="true" ui-type="enum" />
+		<field id="audioPreferences" autocomplete="true" ui-type="enum" />
+		<field id="chromaSubsampling" autocomplete="true" ui-type="enum" />
+		<repeat id="aspectRatioGroupList/aspectRatioGroup">
+			<field id="aspectRatio" autocomplete="true" ui-type="enum" />
+			<field id="aspectRatioType" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<repeat id="colorSpaceGroupList/colorSpaceGroup">
+			<field id="colorSpace" autocomplete="true" ui-type="enum" />
+			<field id="colorType" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<repeat id="avTechnicalAttributeGroupList/avTechnicalAttributeGroup">
+			<field id="avTechnicalAttribute" autocomplete="true" ui-type="enum" />
+			<field id="avTechnicalAttributeLowValue" />
+			<field id="avTechnicalAttributeHighValue" />
+			<field id="avTechnicalAttributeUnit" autocomplete="true" ui-type="enum" />
+		</repeat>
+		<field id="avSpecificationNote" />
+	</section>
+
+	<section id="rightsInformation">
+		<repeat id="rightsGroupList/rightsGroup">
+			<field id="rightType" autocomplete="true" ui-type="enum" />
+			<repeat id="rightHolderGroupList/rightHolderGroup">
+				<field id="rightHolder" autocomplete="true" />
+				<field id="rightHolderContact" autocomplete="true" />
+			</repeat>
+			<field id="rightBeginDate" datatype="date" />
+			<field id="rightEndDate" datatype="date" />
+			<field id="rightJurisdiction" />
+			<field id="standardizedRightStatement" autocomplete="true" ui-type="enum" />
+			<field id="rightStatement" />
+			<field id="rightNote" />
+		</repeat>
+	</section>
+	<section id="rightsInInformation">
+		<repeat id="rightsInGroupList/rightsInGroup">
+			<repeat id="rightInTypes">
+				<field id="rightInType" autocomplete="true" ui-type="enum" />
+			</repeat>
+			<field id="rightInBeginDate" datatype="date" />
+			<field id="rightInEndDate" datatype="date" />
+			<field id="agreementSent" datatype="date" />
+			<field id="agreementReceived" datatype="date" />
+			<field id="agreementSigned" datatype="date" />
+			<repeat id="rightInRestrictions">
+				<field id="rightInRestriction" autocomplete="true" ui-type="enum" />
+			</repeat>
+			<field id="rightReproductionStatement" />
+			<field id="rightInNote" />
 		</repeat>
 	</section>
 </record>

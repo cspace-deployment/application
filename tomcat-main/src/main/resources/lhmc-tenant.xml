@@ -1,7 +1,7 @@
 <cspace-config tenantname="lhmc">
 	<tenantid>501</tenantid>
 	<version>11</version>
-    <include src="settings.xml,local-lhmc-settings.xml" required="false" merge="xmlmerge-settings.properties" strip-root="yes" />
+	<include src="settings.xml,local-lhmc-settings.xml" required="false" merge="xmlmerge-settings.properties" strip-root="yes" />
 
 	<spec>
 		<include src="base-relations.xml" />
@@ -47,8 +47,8 @@
 
 			<include src="base-authority-concept-termList.xml" />
 			<include src="base-authority-concept.xml" />
-			<!--include src="base-authority-work-termList.xml"/-->
-			<!--include src="base-authority-work.xml"/-->
+			<include src="base-authority-work-termList.xml"/>
+			<include src="base-authority-work.xml"/>
 
 			<include src="base-vocabularies.xml" />
 
@@ -69,10 +69,10 @@
 			<include src="base-other-termlistitem.xml" />
 			<include src="base-other-reporting.xml" />
 			<include src="base-other-reportingoutput.xml" />
-		    <include src="base-other-batch.xml" />
-		    <include src="base-other-batchoutput.xml" />
-		    <include src="base-other-invocationresults.xml" />
-		    <include src="base-other-searchall.xml" />
+			<include src="base-other-batch.xml" />
+			<include src="base-other-batchoutput.xml" />
+			<include src="base-other-invocationresults.xml" />
+			<include src="base-other-searchall.xml" />
 		</records>
 	</spec>
 </cspace-config>

@@ -1,4 +1,5 @@
 <!-- Change options of organizationtype, uocmethods, uocusertypes, publishto. -->
+<!-- 2022-04-11 Change options for workcreatortype and worktype (DRYD-1049) -->
 <instances>
 	<include src="domain-instance-vocabularies.xml" strip-root="yes" />
 	<instance id="vocab-inventorystatus">
@@ -27,6 +28,8 @@
 			<option id="partiallydeaccessioned">partially deaccessioned</option>
 			<option id="partiallyexchanged">partially exchanged</option>
 			<option id="partiallyrecataloged">partially recataloged</option>
+			<option id="preacquisition">pre acquisition</option>
+			<option id="retired">retired</option>
 			<option id="returnedloanobject">returned loan object</option>
 			<option id="sold">sold</option>
 			<option id="stolen">stolen</option>
@@ -54,7 +57,7 @@
 			<option id="faculty">faculty</option>
 			<option id="student">student</option>
 			<option id="independentscholar">independent scholar</option>
-			<option id="psuedouser">psuedo-user</option>
+			<option id="psuedouser">pseudo-user</option>
 			<option id="researchassistant">research assistant</option>
 			<option id="staff">staff</option>
 			<option id="summerschoolstudent">summer school student</option>
@@ -128,7 +131,7 @@
 	<instance id="vocab-lostatus">
 		<web-url>loanoutstatus</web-url>
 		<title-ref>loanoutstatus</title-ref>
-		<title>loanedObjectStatus</title>
+		<title>Loaned Object Status</title>
 		<options>
 			<option>Requested</option>
 			<option>Authorized</option>
@@ -275,7 +278,7 @@
 	<instance id="vocab-persontermtype">
 		<web-url>persontermtype</web-url>
 		<title-ref>persontermtype</title-ref>
-		<title>personTermType</title>
+		<title>Person Term Type</title>
 		<options>
 			<option id="artist">Artist</option>
 			<option id="donor">Donor</option>
@@ -288,12 +291,18 @@
 		<title>Work Type</title>
 		<options>
 			<option id="built">Built</option>
+			<option id="course">Course</option>
+			<option id="dance">Dance</option>
+			<option id="exhibitioninstallation">Exhibition/Installation</option>
+			<option id="featuredapplication">Featured Application</option>
+			<option id="featuredcollection">Featured Collection</option>
 			<option id="movable">Movable</option>
 			<option id="movingimage">Moving Image</option>
-			<option id="dance">Dance</option>
-			<option id="theater">Theater</option>
-			<option id="performance">Performance</option>
 			<option id="music">Music</option>
+			<option id="namedcollection">Named Collection</option>
+			<option id="performance">Performance</option>
+			<option id="researchproject">Research Project</option>
+			<option id="theater">Theater</option>
 		</options>
 	</instance>
 	<instance id="vocab-workcreatortype">
@@ -301,13 +310,18 @@
 		<title-ref>workcreatortype</title-ref>
 		<title>Work Creator Type</title>
 		<options>
+			<option id="academicdepartment">Academic Department</option>
 			<option id="architect">Architect</option>
 			<option id="artist">Artist</option>
 			<option id="choreographer">Choreographer</option>
 			<option id="composer">Composer</option>
 			<option id="director">Director</option>
+			<option id="faculty">Faculty</option>
 			<option id="painter">Painter</option>
+			<option id="researcher">Researcher</option>
 			<option id="sculptor">Sculptor</option>
+			<option id="staff">Staff</option>
+			<option id="student">Student</option>
 			<option id="writer">Writer</option>
 		</options>
 	</instance>
@@ -624,7 +638,7 @@
 	<instance id="vocab-materialuse">
 		<web-url>materialuse</web-url>
 		<title-ref>materialuse</title-ref>
-		<title>materialuse</title>
+		<title>Material Use</title>
 		<options>
 			<option id="cladding">cladding</option>
 			<option id="decking">decking</option>
@@ -651,7 +665,7 @@
 	<instance id="vocab-materialproductionrole">
 		<web-url>materialproductionrole</web-url>
 		<title-ref>materialproductionrole</title-ref>
-		<title>materialproductionrole</title>
+		<title>Material Production Role</title>
 		<options>
 			<option id="distributor">distributor</option>
 			<option id="manufacturer">manufacturer</option>
@@ -661,7 +675,7 @@
 	<instance id="vocab-materialresource">
 		<web-url>materialresource</web-url>
 		<title-ref>materialresource</title-ref>
-		<title>materialresource</title>
+		<title>Material Resource</title>
 		<options>
 			<option id="csi">CSI</option>
 			<option id="granta">Granta</option>
@@ -670,7 +684,7 @@
 	<instance id="vocab-materialform">
 		<web-url>materialform</web-url>
 		<title-ref>materialform</title-ref>
-		<title>materialform</title>
+		<title>Material Form</title>
 		<options>
 			<option id="aggregate">aggregate</option>
 			<option id="angle">angle</option>
@@ -710,7 +724,7 @@
 	<instance id="vocab-materialformtype">
 		<web-url>materialformtype</web-url>
 		<title-ref>materialformtype</title-ref>
-		<title>materialformtype</title>
+		<title>Material Form Type</title>
 		<options>
 			<option id="film">film</option>
 			<option id="sheet">sheet</option>
@@ -796,7 +810,7 @@
 	<instance id="vocab-electricalproperties">
 		<web-url>electricalproperties</web-url>
 		<title-ref>electricalproperties</title-ref>
-		<title>electricalproperties</title>
+		<title>Electrical Properties</title>
 		<options>
 			<option id="anti_static">anti-static</option>
 			<option id="electrical_resistivity_conductor">electrical resistivity - conductor</option>
@@ -924,7 +938,7 @@
 	<instance id="vocab-mechanicalpropertyunits">
 		<web-url>mechanicalpropertyunits</web-url>
 		<title-ref>mechanicalpropertyunits</title-ref>
-		<title>Mechanical Propertyunits</title>
+		<title>Mechanical Property Units</title>
 		<options>
 			<option id="kg_per_m3">kg/m³</option>
 			<option id="MPa">MPa</option>
@@ -985,7 +999,7 @@
 	<instance id="vocab-castingprocesses">
 		<web-url>castingprocesses</web-url>
 		<title-ref>castingprocesses</title-ref>
-		<title>castingprocesses</title>
+		<title>Casting Processes</title>
 		<options>
 			<option id="die_casting">die casting</option>
 			<option id="floating">floating</option>
@@ -1322,6 +1336,15 @@
 			<option id="begin">begin</option>
 			<option id="end">end</option>
 			<option id="renewal">renewal</option>
+		</options>
+	</instance>
+	<instance id="vocab-checksumtypes">
+		<web-url>checksumtypes</web-url>
+		<title-ref>checksumtypes</title-ref>
+		<title>Checksum Types</title>
+		<options>
+			<option id="SHA_256">SHA-256</option>
+			<option id="MD5">MD5</option>
 		</options>
 	</instance>
 </instances>
