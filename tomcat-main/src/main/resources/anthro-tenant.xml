@@ -11,7 +11,7 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml,extensions/annotation-collectionobject.xml,extensions/culturalcare-collectionobject.xml,extensions/nagpra-collectionobject.xml,extensions/naturalhistory-collectionobject.xml,anthro-collectionobject.xml" merge="xmlmerge.properties" />
+			<include src="base-collectionobject.xml,extensions/culturalcare-collectionobject.xml,extensions/nagpra-collectionobject.xml,extensions/naturalhistory-collectionobject.xml,anthro-collectionobject.xml" merge="xmlmerge.properties" />
 			<include src="base-authority.xml" />
 
 			<include src="base-procedure-acquisition.xml" />
@@ -21,10 +21,12 @@
 			<include src="base-procedure-osteology.xml,extensions/anthropology-procedure-osteology.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-exhibition.xml" />
 			<include src="base-procedure-groups.xml" />
+			<include src="base-procedure-insurance.xml" />
 			<include src="base-procedure-intake.xml" />
 			<include src="base-procedure-loanin.xml" />
 			<include src="base-procedure-loanout.xml" />
 			<include src="base-procedure-media.xml" />
+			<include src="base-procedure-transport.xml" />
 			<include src="base-procedure-valuationcontrol.xml" />
 			<include src="base-procedure-movement.xml" />
 			<include src="base-procedure-objectexit.xml" />
@@ -42,7 +44,7 @@
 			<include src="base-authority-citation-termList.xml" />
 			<include src="base-authority-citation.xml" />
 			<include src="base-authority-place-termList.xml" />
-			<include src="base-authority-place.xml" />
+			<include src="base-authority-place.xml,extensions/nagpra-authority-place.xml" merge="xmlmerge.properties" />
 
 			<include src="base-authority-taxon-termList.xml" />
 			<include src="base-authority-taxon.xml" />
@@ -51,6 +53,8 @@
 			<include src="base-authority-concept.xml,anthro-authority-concept.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-work-termList.xml" />
 			<include src="base-authority-work.xml" />
+			<include src="base-authority-chronology-termList.xml" />
+			<include src="base-authority-chronology.xml,anthro-authority-chronology.xml" merge="xmlmerge.properties" />
 
 			<include src="base-vocabularies.xml" />
 
@@ -76,6 +80,7 @@
 			<include src="base-other-batchoutput.xml" />
 			<include src="base-other-invocationresults.xml" />
 			<include src="base-other-searchall.xml" />
+			<include src="base-other-associatedauthority.xml" />
 		</records>
 	</spec>
 </cspace-config>

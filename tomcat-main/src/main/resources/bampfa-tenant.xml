@@ -19,7 +19,9 @@
 			<include src="base-procedure-conditioncheck.xml,bampfa-procedure-conditioncheck.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-exhibition.xml"/>
 			<include src="base-procedure-groups.xml,bampfa-procedure-groups.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-insurance.xml" />
 			<include src="base-procedure-intake.xml,bampfa-procedure-intake.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-iterationreport.xml" />
 			<include src="base-procedure-loanin.xml"/>
 			<include src="base-procedure-loanout.xml,bampfa-procedure-loanout.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-media.xml,bampfa-procedure-media.xml" merge="xmlmerge.properties"/>
@@ -28,6 +30,7 @@
 			<!-- <include src="base-procedure-objectexit.xml"/> -->
 			<!-- <include src="base-procedure-conservation.xml"/> -->
 			<include src="base-procedure-uoc.xml"/>
+			<include src="base-procedure-transport.xml" />
 			<include src="base-authority-contact.xml"/>
 
 			<!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
@@ -41,6 +44,8 @@
 			<include src="base-authority-citation.xml"/>
 			<include src="base-authority-place-termList.xml"/>
 			<include src="base-authority-place.xml"/>
+			<include src="base-authority-chronology-termList.xml" />
+			<include src="base-authority-chronology.xml" />
 			<include src="base-authority-concept-termList.xml"/>
 			<include src="base-authority-concept.xml"/>
 			<include src="base-authority-work-termList.xml"/>

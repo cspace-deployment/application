@@ -18,6 +18,7 @@ import org.collectionspace.chain.csp.schema.Option;
 import org.collectionspace.chain.csp.schema.Record;
 import org.collectionspace.chain.csp.schema.Repeat;
 import org.collectionspace.chain.csp.schema.Spec;
+import org.collectionspace.chain.csp.schema.UiData;
 import org.collectionspace.services.common.api.FileTools;
 import org.collectionspace.services.common.api.Tools;
 import org.dom4j.Attribute;
@@ -199,6 +200,8 @@ public class ServiceBindingsGeneration {
 		// Set the bindings for email notifications
 		makeEmailBindings(ele);
 
+		makeUiBindings(ele);
+
 		// add in <tenant:properties> if required
 		makeProperties(ele);
 
@@ -369,7 +372,7 @@ public class ServiceBindingsGeneration {
                 <tenant:host>smtp.gmail.com</tenant:host>
                 <tenant:port>587</tenant:port>
                 <tenant:debug>true</tenant:debug>
-                <tenant:smtpAuth enabled="true">
+                <tenant:smtpAuth enabled="true" protocols="TLSv1.2">
                     <tenant:username>tom@example.com</tenant:username>
                     <tenant:password>password123</tenant:password>
                 </tenant:smtpAuth>
@@ -417,11 +420,12 @@ public class ServiceBindingsGeneration {
 			}
 
 			//
-			// Build <tenant:smtpAuth enabled="false">
+			// Build <tenant:smtpAuth enabled="false" protocols="TLSv1.2">
 			//
 			Element smtpAuthElement = smtpConfigElement.addElement(new QName("smtpAuth", nstenant));
 			if (emailData.doSMTPAuth() != null) {
 				smtpAuthElement.addAttribute("enabled", emailData.doSMTPAuth().toString());
+				smtpAuthElement.addAttribute("protocols", emailData.getSMTPSSLProtocols());
 			}
 
 			if (emailData.getSMTPAuthUsername() != null) {
@@ -466,6 +470,20 @@ public class ServiceBindingsGeneration {
 				ele.addText(emailData.getPasswordResetMessage());
 			}
 		}
+	}
+
+	private void makeUiBindings(Element tenantBindingElement) {
+		UiData uiData = spec.getUiData();
+		String baseUrl = (uiData != null) ? uiData.getBaseURL() : null;
+
+		if (baseUrl == null || baseUrl.startsWith("${")) {
+			baseUrl = "/../cspace/" + this.spec.getAdminData().getTenantName() + "/";
+		}
+
+		Element uiConfigElement = tenantBindingElement.addElement(new QName("uiConfig", nstenant));
+		Element ele = uiConfigElement.addElement(new QName("baseUrl", nstenant));
+
+		ele.addText(baseUrl);
 	}
 
 	/**

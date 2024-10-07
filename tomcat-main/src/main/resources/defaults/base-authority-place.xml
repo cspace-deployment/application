@@ -40,6 +40,11 @@
 			<title-ref>tgn_place</title-ref>
 			<title>Thesaurus of Geographic Names</title>
 		</instance>
+		<instance id="place-archaeological">
+			<web-url>archaeological</web-url>
+			<title-ref>archaeological</title-ref>
+			<title>Archaeological Site</title>
+		</instance>
 	</instances>
 
 	<section id="coreInformation">
@@ -123,6 +128,10 @@
 			<field id="geoRefRemarks" />
 			<field id="geoRefPlaceName" />
 		</repeat>
+	</section>
+
+	<section id="associationInformation">
+		<include src="base-other-associatedauthority.xml" strip-root="true" />
 	</section>
 
 	<!-- not used in UI except in autocompletes -->

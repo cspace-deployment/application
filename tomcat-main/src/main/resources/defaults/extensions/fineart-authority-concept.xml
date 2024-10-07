@@ -25,6 +25,17 @@
 			<title-ref>ethculture</title-ref>
 			<title>Ethnographic Cultures</title>
 		</instance>
+		<instance id="concept-nomenclature">
+			<web-url>nomenclature</web-url>
+			<title-ref>nomenclature</title-ref>
+			<title>Nomenclature</title>
+		</instance>
+		<!-- For the UOC Occasion field -->
+		<instance id="concept-occasion">
+			<web-url>occasion</web-url>
+			<title-ref>occasion</title-ref>
+			<title>Occasion Concepts</title>
+		</instance>
 	</instances>
 
 	<section id="conceptAuthorityInformation">
