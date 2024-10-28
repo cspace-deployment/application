@@ -5,6 +5,8 @@
 		<repeat id="objectNameList/objectNameGroup">
 			<!-- Add mini -->
 			<field id="objectName" mini="list" />
+			<!-- Add mini -->
+			<field id="objectNameControlled" mini="list" />
 		</repeat>
 
 		<!-- Local fields -->
@@ -86,6 +88,9 @@
 
 	<section id="objectCollectionInformation">
 		<field id="fieldLocVerbatim" section="anthro" />
+		<repeat id="fieldCollectionEvents" section="anthro">
+			<field id="fieldCollectionEvent" autocomplete="true" section="anthro" />
+		</repeat>
 	</section>
 
 	<section id="localityInformation">

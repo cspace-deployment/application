@@ -11,7 +11,6 @@
 		<tenantname>cinefiles</tenantname>
 	</admin>
 	<email>
-		<baseurl>${CSPACE_SMTP_EMAIL_BASEURL_OPT}</baseurl>
 		<from>${CSPACE_SMTP_EMAIL_FROM_OPT}</from>
 		<to />
 		<smtp>
@@ -63,24 +62,6 @@
 	   </service>
 	</persistence>
 	<ui>
-		<web>
-			<login-dest>/collectionspace/ui/cinefiles/html/findedit.html</login-dest>
-			<login-failed-dest>/collectionspace/ui/cinefiles/html/index.html</login-failed-dest>
-			<front-page>/collectionspace/ui/cinefiles/html/index.html</front-page>
-			<mappings>
-				<map id="record">
-					<file>/cinefiles/html/record.html</file>
-				</map>
-				<map id="authority">
-					<file>/cinefiles/html/record.html</file>
-					<configure>
-						<meta id="recordType">{instance/web-url}</meta>
-					</configure>
-				</map>
-				<map id="procedure">
-					<file>/cinefiles/html/record.html</file>
-				</map>
-			</mappings>
-		</web>
+		<baseurl>${CSPACE_CINEFILES_UI_BASE_URL_OPT}</baseurl>
 	</ui>
 </settings>
