@@ -27,6 +27,7 @@
 			<include src="base-procedure-groups.xml,pahma-procedure-groups.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-insurance.xml" />
 			<include src="base-procedure-intake.xml,pahma-procedure-intake.xml" merge="xmlmerge.properties" />
+			<include src="base-procedure-iterationreport.xml" />
 			<include src="base-procedure-hit.xml,pahma-procedure-hit.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-loanin.xml,pahma-procedure-loanin.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-loanout.xml,pahma-procedure-loanout.xml" merge="xmlmerge.properties" />
@@ -36,7 +37,16 @@
 			<include src="base-procedure-objectexit.xml,anthropology-procedure-objectexit.xml,pahma-procedure-objectexit.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-conservation.xml" />
 			<include src="base-procedure-uoc.xml" />
+			<include src="base-procedure-dutyofcare.xml" />
 			<include src="base-procedure-transport.xml" />
+			<include src="base-procedure-repatriationrequest.xml" />
+			<include src="base-procedure-nagprainventory.xml" />
+			<include src="base-procedure-summarydocumentation.xml" />
+			<include src="base-procedure-heldintrust.xml" />
+			<include src="base-procedure-consultation.xml" />
+			<include src="base-procedure-deaccession.xml" />
+			<include src="base-procedure-exit.xml" />
+			<include src="base-procedure-restrictedmedia.xml" />
 
 			<include src="base-authority-contact.xml,anthropology-authority-contact.xml,pahma-authority-contact.xml" merge="xmlmerge.properties" />
 

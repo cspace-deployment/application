@@ -47,6 +47,12 @@
 			<title-ref>occasion</title-ref>
 			<title>Occasion Concepts</title>
 		</instance>
+		<!-- Note: In core this is concept-concept which is ethculture here, so we're adding a new vocab -->
+		<instance id="concept-associated">
+			<web-url>associated</web-url>
+			<title-ref>associated</title-ref>
+			<title>Associated Concepts</title>
+		</instance>
 	</instances>
 
 	<section id="conceptAuthorityInformation">
@@ -56,4 +62,3 @@
 		</repeat>
 	</section>
 </record>
-

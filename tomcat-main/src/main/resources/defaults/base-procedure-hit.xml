@@ -1,4 +1,4 @@
-<record id="hit" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
+<record id="hit" in-findedit="yes" type="record,procedure" tag="legacy" cms-type="default" generate-services-schema="true">
 	<services-url>hits</services-url>
 	<services-tenant-singular>Hit</services-tenant-singular>
 	<services-tenant-plural>Hits</services-tenant-plural>
@@ -69,18 +69,19 @@
             <field id="handlingLimitationsDetail" />
             <field id="handlingLimitationsRequestor" autocomplete="true" />
             <field id="handlingLimitationsOnBehalfOf" autocomplete="true" />
-            <field id="handlingLimitationsDate" datatype="date" />            
+            <field id="handlingLimitationsDate" datatype="date" />
 		</repeat>
 	</section>
 
 	<section id="correspondence">
 		<repeat id="correspondenceGroupList/correspondenceGroup">
-			<field id="correspondenceDate" datatype="date" />
 			<field id="correspondenceSender" autocomplete="true" />
 			<field id="correspondenceRecipient" autocomplete="true" />
+			<field id="correspondenceType" autocomplete="true" ui-type="enum" />
+			<field id="correspondenceDate" datatype="date" />
 			<field id="correspondenceSummary" />
 			<field id="correspondenceReference" ui-type="enum" />
 		</repeat>
 	</section>
- 
+
 </record>
