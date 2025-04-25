@@ -94,6 +94,7 @@
 		<repeat id="objectCountGroupList/objectCountGroup">
 			<field id="objectCount" datatype="integer" />
 			<field id="objectCountType" autocomplete="true" ui-type="enum" />
+			<field id="objectCountUnit" autocomplete="true" ui-type="enum" />
 			<field id="objectCountCountedBy" autocomplete="true" />
 			<field id="objectCountDate" datatype="date" />
 			<field id="objectCountNote" />
@@ -459,6 +460,11 @@
 		<repeat id="referenceGroupList/referenceGroup">
 			<field id="reference" autocomplete="true" />
 			<field id="referenceNote" />
+		</repeat>
+
+		<repeat id="publishedRelatedLinkGroupList/publishedRelatedLinkGroup">
+			<field id="relatedLink" />
+			<field id="descriptiveTitle" />
 		</repeat>
 	</section>
 	<section id="objectCollectionInformation">
