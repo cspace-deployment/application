@@ -318,7 +318,6 @@
 			<option id="publisher">Publisher</option>
 		</options>
 	</instance>
-
 	<instance id="vocab-citationtermtype">
 		<web-url>citationtermtype</web-url>
 		<title-ref>citationtermtype</title-ref>
@@ -1189,7 +1188,12 @@
 		<options>
 			<option id="approved">approved</option>
 			<option id="not_approved">not approved</option>
-			<option id="not_required">not required</option>
+			<option id="consulted">consulted</option>
+			<option id="deed_returned">deed returned</option>
+			<option id="deed_sent">deed sent</option>
+			<option id="partially_approved">partially approved</option>
+			<option id="tabled">tabled</option>
+			<option id="under_arbitration">under arbitration</option>
 		</options>
 	</instance>
 	<instance id="vocab-disposalmethod">
@@ -2049,8 +2053,6 @@
 		<options>
 			<option id="collection_count">collection count</option>
 			<option id="inventory_count">inventory count</option>
-			<option id="associated_funerary_objects">associated funerary objects</option>
-			<option id="miniumum_num_of_individuals">minimum number of individuals</option>
 		</options>
 	</instance>
 	<instance id="vocab-assocauthorityrelationtype">
@@ -2072,6 +2074,311 @@
 			<option id="resident">resident</option>
 			<option id="place_of_residence">place of residence</option>
 			<option id="situated_in">situated in</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagprainvolvedrole">
+		<web-url>nagprainvolvedrole</web-url>
+		<title-ref>nagprainvolvedrole</title-ref>
+		<title>NAGPRA Involved Role</title>
+		<options>
+			<option id="tribal_rep">tribal representative</option>
+			<option id="museum_rep">museum representative</option>
+			<option id="consultant">consultant</option>
+			<option id="lineal_descendant">lineal descendant</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpratype">
+		<web-url>nagpratype</web-url>
+		<title-ref>nagpratype</title-ref>
+		<title>NAGPRA Type</title>
+		<options>
+			<option id="condition_reporting">condition reporting</option>
+			<option id="handling">handling</option>
+			<option id="exhibition">exhibition</option>
+			<option id="lending">lending</option>
+			<option id="publication">publication</option>
+			<option id="photography">photography</option>
+			<option id="research">research</option>
+			<option id="storage">storage</option>
+			<option id="treatment">treatment</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpralevel">
+		<web-url>nagpralevel</web-url>
+		<title-ref>nagpralevel</title-ref>
+		<title>NAGPRA Level</title>
+		<options>
+			<option id="preference">preference</option>
+			<option id="recommendation">recommendation</option>
+			<option id="restriction">restriction</option>
+			<option id="unknown">unknown</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpradocumentationstatus">
+		<web-url>nagpradocumentationstatus</web-url>
+		<title-ref>nagpradocumentationstatus</title-ref>
+		<title>NAGPRA Documentation Status</title>
+		<options>
+			<option id="published">published</option>
+			<option id="republished">republished</option>
+			<option id="counter_claim_filed">counter claim filed</option>
+			<option id="pending_consultation">pending consultation</option>
+		</options>
+	</instance>
+	<instance id="vocab-documentationgroup">
+		<web-url>documentationgroup</web-url>
+		<title-ref>documentationgroup</title-ref>
+		<title>Documentation Group</title>
+		<options>
+			<option id="NAGPRA_committee">NAGPRA committee</option>
+			<option id="tribal_advisory_board">tribal advisory board</option>
+			<option id="executive_committee">executive committee </option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpranoticetype">
+		<web-url>nagpranoticetype</web-url>
+		<title-ref>nagpranoticetype</title-ref>
+		<title>NAGPRA Notice Types</title>
+		<options>
+			<option id="ancestors">ancestors</option>
+			<option id="associated_funerary">associated funerary remains</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpranotice">
+		<web-url>nagpranotice</web-url>
+		<title-ref>nagpranotice</title-ref>
+		<title>NAGPRA Notice</title>
+		<options>
+			<option id="opt_in">opt in</option>
+			<option id="opt_out">opt out</option>
+			<option id="pending">pending</option>
+		</options>
+	</instance>
+	<instance id="vocab-summarydocumentationtype">
+		<web-url>summarydocumentationtype</web-url>
+		<title-ref>summarydocumentationtype</title-ref>
+		<title>NAGPRA Summary Documentation Type</title>
+		<options>
+			<option id="unassociated_funerary_obj">unassociated funerary object</option>
+			<option id="sacred_object">sacred object</option>
+			<option id="cultural_patrimony">object of cultural patrimony</option>
+		</options>
+	</instance>
+	<instance id="vocab-heldintrusttype">
+		<web-url>heldintrusttype</web-url>
+		<title-ref>heldintrusttype</title-ref>
+		<title>HeldInTrust Type</title>
+		<options>
+			<option id="mou">MOU</option>
+			<option id="repatriation_agreement">repatriation agreement</option>
+			<option id="temporary">temporary</option>
+		</options>
+	</instance>
+	<instance id="vocab-correspondencetype">
+		<web-url>correspondencetype</web-url>
+		<title-ref>correspondencetype</title-ref>
+		<title>Correspondence Type</title>
+		<options>
+			<option id="in_person">in person</option>
+			<option id="phone_discussion">phone discussion</option>
+			<option id="voicemail">voicemail</option>
+			<option id="email">email</option>
+		</options>
+	</instance>
+	<instance id="vocab-limitationtype">
+		<web-url>limitationtype</web-url>
+		<title-ref>limitationtype</title-ref>
+		<title>Access Limitation Type</title>
+		<options>
+			<option id="display_visual">display/visual</option>
+			<option id="handling_gender">handling - gender</option>
+			<option id="handling_other">handling - other</option>
+			<option id="lending">lending</option>
+			<option id="publication">publication</option>
+			<option id="research_access">research/access</option>
+			<option id="storage">storage</option>
+			<option id="treatment">treatment</option>
+			<option id="unknown">unknown</option>
+		</options>
+	</instance>
+	<instance id="vocab-limitationlevel">
+		<web-url>limitationlevel</web-url>
+		<title-ref>limitationlevel</title-ref>
+		<title>Access Limitation Level</title>
+		<options>
+			<option id="preference">preference</option>
+			<option id="recommendation">recommendation</option>
+			<option id="restriction">restriction</option>
+			<option id="unknown">unknown</option>
+		</options>
+	</instance>
+	<instance id="vocab-consultationreason">
+		<web-url>consultationreason</web-url>
+		<title-ref>consultationreason</title-ref>
+		<title>Consultation Reason</title>
+		<options>
+			<option id="claim">claim</option>
+			<option id="inventory">inventory</option>
+			<option id="summary">summary</option>
+			<option id="nagpra_determination">NAGPRA determination</option>
+			<option id="duty_of_care">duty of care</option>
+		</options>
+	</instance>
+	<instance id="vocab-consultationtype">
+		<web-url>consultationtype</web-url>
+		<title-ref>consultationtype</title-ref>
+		<title>Consultation Type</title>
+		<options>
+			<option id="email">email</option>
+			<option id="in_person">in person</option>
+			<option id="mail">mail</option>
+			<option id="virtual_meeting">virtual meeting</option>
+		</options>
+	</instance>
+	<instance id="vocab-consultationstatus">
+		<web-url>consultationstatus</web-url>
+		<title-ref>consultationstatus</title-ref>
+		<title>Consultation Status</title>
+		<options>
+			<option id="verified">verified</option>
+			<option id="not_verified">not verified</option>
+			<option id="in_progress">in progress</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpraclaimtype">
+		<web-url>nagpraclaimtype</web-url>
+		<title-ref>nagpraclaimtype</title-ref>
+		<title>NAGPRA Claim Types</title>
+		<options>
+			<option id="human_remains">human remains</option>
+			<option id="afo">associated funerary object (AFO)</option>
+			<option id="ufo">unassociated funerary object (UFO)</option>
+			<option id="objectOfCulturalPatrimony">object of cultural patrimony</option>
+			<option id="sacredObject">sacred object</option>
+			<option id="unrelated_to_nagpra">unrelated to NAGPRA</option>
+		</options>
+	</instance>
+	<instance id="vocab-repatriationrequesttype">
+		<web-url>repatriationrequesttype</web-url>
+		<title-ref>repatriationrequesttype</title-ref>
+		<title>Repatriation Request Types</title>
+		<options>
+			<option id="human_remains">human remains</option>
+			<option id="afo">associated funerary object (AFO)</option>
+			<option id="ufo">unassociated funerary object (UFO)</option>
+			<option id="objectOfCulturalPatrimony">object of cultural patrimony</option>
+			<option id="sacredObject">sacred object</option>
+			<option id="unrelated_to_nagpra">unrelated to NAGPRA</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpracategory">
+		<web-url>nagpracategory</web-url>
+		<title-ref>nagpracategory</title-ref>
+		<title>NAGPRA Categories</title>
+		<options>
+			<option id="afo">associated funerary object (AFO)</option>
+			<option id="human_remains">human remains</option>
+			<option id="objectOfCulturalPatrimony">object of cultural patrimony</option>
+			<option id="sacredObject">sacred object</option>
+			<option id="ufo">unassociated funerary object (UFO)</option>
+			<option id="subjectToNAGPRA">subject to NAGPRA, unspecified</option>
+			<option id="undetermined">undetermined/requires additional consultation</option>
+		</options>
+	</instance>
+	<instance id="vocab-graveassoccode">
+		<web-url>graveassoccode</web-url>
+		<title-ref>graveassoccode</title-ref>
+		<title>Grave Association Codes</title>
+		<options>
+			<option id="associatedFuneraryObject">associated funerary object (AFO)</option>
+			<option id="unassociatedFuneraryObjectWithIdentifiedBurial">unassociated funerary object (UFO) with identified burial</option>
+			<option id="unassociatedFuneraryObjectWithCemetery">unassociated funerary object (UFO)/cemetery</option>
+			<option id="lacksClearFuneraryStatusNearCemetery">lacks clear funerary status/near cemetery</option>
+			<option id="undetermined">undetermined/requires additional research</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagprainventory">
+		<web-url>nagprainventory</web-url>
+		<title-ref>nagprainventory</title-ref>
+		<title>NAGPRA Inventories</title>
+		<options>
+			<option id="inv_in_progress">inventory, in progress</option>
+			<option id="inv_complete">inventory, complete</option>
+			<option id="inv_not_started">inventory, not started</option>
+			<option id="sum_in_progress">summary, in progress</option>
+			<option id="sum_complete">summary, complete</option>
+			<option id="sum_not_started">summary, not started</option>
+		</options>
+	</instance>
+	<instance id="vocab-nagpradetermtype">
+		<web-url>nagpradetermtype</web-url>
+		<title-ref>nagpradetermtype</title-ref>
+		<title>NAGPRA Determination Types</title>
+		<options>
+			<option id="determined_by_museum">determined by museum</option>
+			<option id="determined_by_consultation">determined by consultation</option>
+		</options>
+	</instance>
+	<instance id="vocab-deaccessionreason">
+		<web-url>deaccessionreason</web-url>
+		<title-ref>deaccessionreason</title-ref>
+		<title>Deaccession Reason</title>
+		<options>
+			<option id="no_longer_useful">no longer useful to the organization purpose</option>
+			<option id="does_not_fit">does not fit collecting policy</option>
+			<option id="deteriorated">has deteriorated beyond usefulness</option>
+			<option id="no_longer_preserved">can no longer be preserved</option>
+			<option id="has_better_example">is represented by a better example</option>
+			<option id="nagpra_repatriation">NAGPRA repatriation</option>
+		</options>
+	</instance>
+	<instance id="vocab-objexitmethod">
+		<web-url>objexitmethod</web-url>
+		<title-ref>objexitmethod</title-ref>
+		<title>Object Exit Methods</title>
+		<options>
+			<option id="auction">auction</option>
+			<option id="donation">donation</option>
+			<option id="repatriation">repatriation</option>
+			<option id="sale">sale</option>
+			<option id="shred">shred</option>
+			<option id="trash_disposal">trash disposal</option>
+		</options>
+	</instance>
+	<instance id="vocab-objexitreason">
+		<web-url>objexitreason</web-url>
+		<title-ref>objexitreason</title-ref>
+		<title>Object Exit Reasons</title>
+		<options>
+			<option id="deaccession">deaccession</option>
+			<option id="disposal">disposal</option>
+			<option id="repatriation">repatriation</option>
+			<option id="return_loan">return of loan</option>
+		</options>
+	</instance>
+	<instance id="vocab-objectcountunit">
+		<web-url>objectcountunit</web-url>
+		<title-ref>objectcountunit</title-ref>
+		<title>Object Count Unit</title>
+		<options>
+			<option id="lot">lot</option>
+			<option id="object">object</option>
+			<option id="pair">pair</option>
+			<option id="set">set</option>
+		</options>
+	</instance>
+	<instance id="vocab-objexitagentrole">
+		<web-url>objexitagentrole</web-url>
+		<title-ref>objexitagentrole</title-ref>
+		<title>Object Exit Agent Roles</title>
+		<options>
+			<option id="purchaser">purchaser</option>
+			<option id="auction_house">auction house</option>
+			<option id="museum_coordinator">museum coordinator</option>
+			<option id="original_donor">original donor</option>
+			<option id="sale_broker">sale broker</option>
+			<option id="shredding_company">shredding company</option>
+			<option id="tribal_representative">tribal representative</option>
 		</options>
 	</instance>
 </instances>

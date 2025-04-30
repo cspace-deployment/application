@@ -16,5 +16,10 @@
 			<title-ref>nomenclature</title-ref>
 			<title>Nomenclature</title>
 		</instance>
+		<instance id="concept-associated">
+			<web-url>associated</web-url>
+			<title-ref>associated</title-ref>
+			<title>Associated</title>
+		</instance>
 	</instances>
 </record>
