@@ -17,7 +17,6 @@
 			<include src="base-procedure-blobs.xml"/>
 			<!-- <include src="base-procedure-claim.xml"/> -->
 			<include src="base-procedure-conditioncheck.xml"/>
-			<include src="base-procedure-dutyofcare.xml" />
 			<include src="base-procedure-groups.xml"/>
 			<include src="base-procedure-intake.xml,botgarden-procedure-intake.xml" merge="xmlmerge.properties"/>
 
@@ -29,14 +28,6 @@
 			<include src="base-procedure-pottag.xml"/>
 			<include src="base-procedure-objectexit.xml,ucbg-extensions/naturalhistory-procedure-objectexit.xml,botgarden-procedure-objectexit.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-uoc.xml"/>
-			<include src="base-procedure-repatriationrequest.xml" />
-			<include src="base-procedure-nagprainventory.xml" />
-			<include src="base-procedure-summarydocumentation.xml" />
-			<include src="base-procedure-heldintrust.xml" />
-			<include src="base-procedure-consultation.xml" />
-			<include src="base-procedure-deaccession.xml" />
-			<include src="base-procedure-exit.xml" />
-			<include src="base-procedure-restrictedmedia.xml" />
 
 			<include src="base-authority-contact.xml"/>
 
