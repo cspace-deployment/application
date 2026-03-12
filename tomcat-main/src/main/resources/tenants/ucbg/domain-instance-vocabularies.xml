@@ -1400,4 +1400,26 @@
 			<option id="usetype02" from-static-id="other">Other</option>
 		</options>
 	</instance>
+	<instance id="vocab-observationphenophase">
+		<web-url>observationphenophase</web-url>
+		<title-ref>observationphenophase</title-ref>
+		<title>Phenological Observation Phenophase</title>
+		<options>
+			<option id="flowers">Flowers</option>
+			<option id="fruits">Fruits</option>
+			<option id="flowersFruits">Flowers/Fruits</option>
+			<option id="cones">Cones</option>
+			<option id="sporesSporangia">Spores/Sporangia</option>
+			<option id="vegetative">Vegetative</option>
+		</options>
+	</instance>
+	<instance id="vocab-observationquantity">
+		<web-url>observationquantity</web-url>
+		<title-ref>observationquantity</title-ref>
+		<title>Phenological Observation Quantity</title>
+		<options>
+			<option id="some">Some</option>
+			<option id="many">Many</option>
+		</options>
+	</instance>
 </root>
