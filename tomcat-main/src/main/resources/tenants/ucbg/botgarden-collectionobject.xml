@@ -198,6 +198,15 @@
 		<field id="researchUse" datatype="boolean" section="botgarden"/>
 		<field id="ignoreRedDot" datatype="boolean" section="botgarden"/>
 		<field id="fragrance" datatype="boolean" section="botgarden"/>
+
+		<repeat id="phenologicalObservationGroupList/phenologicalObservationGroup" section="botgarden">
+			<field id="observationDate" datatype="date" section="botgarden"/>
+			<field id="observationPhenophase" section="botgarden" ui-type="enum" autocomplete="vocab-observationphenophase"/>
+			<field id="observationQuantity" section="botgarden" ui-type="enum" autocomplete="vocab-observationquantity"/>
+			<field id="observationBy" section="botgarden" autocomplete="person-person"/>
+			<field id="observationNote" section="botgarden"/>
+		</repeat>
+
 		<field id="flowersJan" section="botgarden">
 			<options>
 				<option id="No" default="yes">No</option>
