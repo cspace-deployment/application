@@ -7,33 +7,12 @@
 		<title-ref>inventorystatus</title-ref>
 		<title>Inventory Status</title>
 		<options>
-			<option id="unknown">unknown</option>
-			<option id="accessionstatusunclear">accession status unclear</option>
-			<option id="accessioned">accessioned</option>
 			<option id="deaccessioned">deaccessioned</option>
-			<option id="destroyed">destroyed</option>
-			<option id="destructiveanalysis">destructive analysis</option>
-			<option id="discarded">discarded</option>
-			<option id="exchanged">exchanged</option>
-			<option id="intendedfortransfer">intended for transfer</option>
-			<option id="irregularmuseumnumber">irregular museum number</option>
+			<option id="instorage">in storage</option>
 			<option id="missing">missing</option>
-			<option id="missingininventory">missing in inventory</option>
-			<option id="notcataloged">not cataloged</option>
-			<option id="notlocated">not located</option>
-			<option id="notreceived">not received</option>
-			<option id="numbernotused">number not used</option>
-			<option id="objectmount">object mount</option>
+			<option id="offsite">off site</option>
 			<option id="onloan">on loan</option>
-			<option id="partiallydeaccessioned">partially deaccessioned</option>
-			<option id="partiallyexchanged">partially exchanged</option>
-			<option id="partiallyrecataloged">partially recataloged</option>
-			<option id="preacquisition">pre acquisition</option>
-			<option id="retired">retired</option>
-			<option id="returnedloanobject">returned loan object</option>
-			<option id="sold">sold</option>
-			<option id="stolen">stolen</option>
-			<option id="transferred">transferred</option>
+			<option id="ondisplay">on display</option>
 		</options>
 	</instance>
 	<instance id="vocab-uocmethods">
@@ -509,6 +488,8 @@
 			<option id="repository">repository</option>
 			<option id="studio">studio</option>
 			<option id="workshop">workshop</option>
+			<option id="federallyrecognizedtribe">federally-recognized tribe</option>
+			<option id="nonfederallyrecognizedtribe">non-federally-recognized tribe</option>
 		</options>
 	</instance>
 	<!-- <instance id="vocab-taxontype">
@@ -1327,15 +1308,9 @@
 		<title-ref>annotationtype</title-ref>
 		<title>Annotation Type</title>
 		<options>
-			<option id="additional_taxa">additional taxa</option>
-			<option id="deaccession">deaccession</option>
-			<option id="holotype_location">holotype location</option>
-			<option id="image_made">image made</option>
-			<option id="nomenclature">nomenclature</option>
-			<option id="number_collision">number collision</option>
-			<option id="population_biology">population biology</option>
-			<option id="type">type</option>
-			<option id="vegetation_type_map_project">Vegetation Type Map Project</option>
+			<option id="catalognote">catalog note</option>
+			<option id="legacydatanote">legacy data note</option>
+			<option id="staffnote">staff note</option>
 		</options>
 	</instance>
 	<instance id="vocab-insurancetype">
