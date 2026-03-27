@@ -45,6 +45,8 @@
       <field id="correspondenceSummary" />
       <field id="correspondenceReference" ui-type="enum" />
     </repeat>
+
+    <field id="note" />
   </section>
 
   <section id="culturalCareInformation">
