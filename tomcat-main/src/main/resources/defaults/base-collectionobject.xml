@@ -254,6 +254,9 @@
 			<repeat id="contentPersons">
 				<field id="contentPerson" autocomplete="true" />
 			</repeat>
+			<repeat id="controlledContentPlaces">
+				<field id="controlledContentPlace" autocomplete="true" />
+			</repeat>
 			<repeat id="contentPlaces">
 				<field id="contentPlace" />
 			</repeat>
@@ -345,6 +348,9 @@
 		<repeat id="objectProductionOrganizationGroupList/objectProductionOrganizationGroup">
 			<field id="objectProductionOrganization" autocomplete="true" />
 			<field id="objectProductionOrganizationRole" />
+		</repeat>
+		<repeat id="objectProductionAgents">
+			<field id="objectProductionAgent" />
 		</repeat>
 		<field id="objectProductionNote" />
 	</section>
