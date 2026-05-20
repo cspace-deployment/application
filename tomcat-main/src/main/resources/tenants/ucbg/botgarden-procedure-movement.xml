@@ -22,6 +22,21 @@
 
 	<!-- Local fields -->
 
+	<section id="geoReferenceInformation">
+		<field id="decimalLatitude" datatype="float" section="botgarden"/>
+		<field id="decimalLongitude" datatype="float" section="botgarden"/>
+		<field id="geodeticDatum" section="botgarden"/>
+		<field id="coordUncertaintyInMeters" datatype="integer" section="botgarden"/>
+		<field id="pointRadiusSpatialFit" datatype="integer" section="botgarden"/>
+		<field id="geoReferencedBy" section="botgarden" autocomplete="true"/>
+		<field id="geoRefDate" datatype="date" section="botgarden"/>
+		<field id="geoRefProtocol" section="botgarden" ui-type="enum" autocomplete="true"/>
+		<field id="geoRefSource" section="botgarden" ui-type="enum" autocomplete="true"/>
+		<field id="geoRefVerificationStatus" section="botgarden" ui-type="enum" autocomplete="true"/>
+		<field id="geoRefRemarks" section="botgarden"/>
+		<field id="geoRefPlaceName" section="botgarden"/>
+	</section>
+
 	<section id="labelInformation">
 		<field id="labelRequested" ui-search="repeatable" section="botgarden">
 			<options>
