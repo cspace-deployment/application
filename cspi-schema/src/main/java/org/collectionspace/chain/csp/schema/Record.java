@@ -38,6 +38,8 @@ public class Record implements FieldParent {
 	private static final String TYPE_AUTHORITY = "Authority";
 	private static final String TYPE_AUTHORITY_LOWERCASE = TYPE_AUTHORITY.toLowerCase();
 
+	public static final String AUTH_DISPLAY_NAME = "services-tenant-auth-display-name";
+
 	public static final String ELASTICSEARCH_INDEXED = "elasticsearchIndexed";
 	public static final String SUPPORTS_LOCKING = "supportslocking";
 	public static final String SUPPORTS_REPLICATING = "supportsReplicating";
@@ -145,6 +147,7 @@ public class Record implements FieldParent {
 		// record,authority,compute-displayname can have multiple types using
 		// commas
 		utils.initSet(section, "@type", new String[] { "record" });
+		utils.initSet(section, "@tag", new String[] {});
 		//
 		// Service specific config for Nuxeo ECM platform - things added to the "doctype" definitions
 		//
@@ -256,6 +259,7 @@ public class Record implements FieldParent {
 		utils.initStrings(section, "services-tenant-plural", utils.getString("services-tenant-singular") + "s");
 		utils.initStrings(section, "services-tenant-auth-singular", utils.getString("services-url"));
 		utils.initStrings(section, "services-tenant-auth-plural", utils.getString("services-tenant-singular") + "s");
+		utils.initStrings(section, AUTH_DISPLAY_NAME, utils.getString("services-tenant-singular"));
 
 		utils.initStrings(section, "services-schema-location", "http://services.collectionspace.org");
 
@@ -602,6 +606,10 @@ public class Record implements FieldParent {
 		return utils.getSet("@services-prefetch-fields");
 	}
 
+	public Set<String> getTags() {
+		return utils.getSet("@tag");
+	}
+
 	public Spec getSpec() {
 		return spec;
 	}
@@ -820,6 +828,10 @@ public class Record implements FieldParent {
 
 	public String getServicesTenantAuthSg() {
 		return utils.getString("services-tenant-auth-singular");
+	}
+
+	public String getServicesTenantAuthDisplayName() {
+		return utils.getString(AUTH_DISPLAY_NAME);
 	}
 
 	/*
@@ -1437,4 +1449,5 @@ public class Record implements FieldParent {
 	public String getSortKey(String fieldId) {
 		return sortKeys.get(fieldId);
 	}
+
 }
