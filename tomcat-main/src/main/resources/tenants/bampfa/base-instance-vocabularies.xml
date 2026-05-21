@@ -860,8 +860,7 @@
         <options>
             <option id="vision_colorfulness_low">vision - colorfulness (low)</option>
             <option id="vision_colorfulness_medium">vision - colorfulness (medium)</option>
-            <option id="vision_colorfulness_intensity_medium">vision - colorfulness intensity
-                (medium)</option>
+            <option id="vision_colorfulness_intensity_medium">vision - colorfulness intensity (medium)</option>
             <option id="vision_intensity_high">vision - intensity (high)</option>
             <option id="taste_bitter">taste - bitter</option>
             <option id="taste_salty">taste - salty</option>
@@ -1935,8 +1934,7 @@
             <option id="in_copyright_eu_orphan">in copyright - EU orphan work</option>
             <option id="in_copyright_educational">in copyright - education use permitted</option>
             <option id="in_copyright_noncommercial">in copyright - non-commercial use permitted</option>
-            <option id="in_copyright_unlocatable">in copyright - rights holders unlocatable or
-                unidentifiable</option>
+            <option id="in_copyright_unlocatable">in copyright - rights holders unlocatable or unidentifiable</option>
             <option id="nocopyright_contractual">no copyright - contractual restrictions</option>
             <option id="nocopyright_noncommercial">no copyright - non-commerical use only</option>
             <option id="nocopyright_other">no copyright - other known legal restrictions</option>
